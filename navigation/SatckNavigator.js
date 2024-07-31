@@ -11,6 +11,7 @@ import { Entypo } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
 import ProfileScreen from "../Screens/ProfileScreen";
 import { Ionicons } from "@expo/vector-icons";
+import ProductInfo from "../Screens/ProductInfo";
 
 const StackNavigator = () => {
   const Stack = createNativeStackNavigator();
@@ -85,6 +86,11 @@ const StackNavigator = () => {
           component={BottomTabs}
           options={{ headerShown: false }}
         />
+        <Stack.Screen
+        name="Info"
+        component={ProductInfo}
+        options={{ headerShown: false }}
+      />
       </Stack.Navigator>
     </NavigationContainer>
   );
