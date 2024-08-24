@@ -12,6 +12,8 @@ import { AntDesign } from "@expo/vector-icons";
 import ProfileScreen from "../Screens/ProfileScreen";
 import { Ionicons } from "@expo/vector-icons";
 import ProductInfo from "../Screens/ProductInfo";
+import AddAddressScreen from "../Screens/AddAddressScreen";
+import AddressScreen from "../Screens/AddressScreen";
 
 const StackNavigator = () => {
   const Stack = createNativeStackNavigator();
@@ -91,6 +93,16 @@ const StackNavigator = () => {
         component={ProductInfo}
         options={{ headerShown: false }}
       />
+      <Stack.Screen
+          name="Address"
+          component={AddAddressScreen}
+          options={{ headerShown: false }}
+        />
+          <Stack.Screen
+          name="Add"
+          component={AddressScreen}
+          options={{ headerShown: false }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
